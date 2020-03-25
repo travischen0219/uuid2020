@@ -3,12 +3,16 @@
     <head>
         <meta charset='utf-8'> 
     </head>
+    <div class="circle"></div>
+    <div class="bgcover"></div>
     <body bgcolor="#FFFFFF" style="overflow-x:hidden;">
         
         <div class="img_top" onclick="location.href='./index.html';"></div>
         <div class="img_top2"></div>
         <div class="top_grey"></div>
         <div class="bottom"></div>
+        
+
         <div class="divTable minimalistBlack">
             <div class="divTableBody">
             <div class="divTableRow">
@@ -28,12 +32,68 @@
             <div class="divTableCell"><img src="./PNG/0025.jpg" style="width:10vw; "></img><button type="button" style="color: white; background-color: #DB0007;">快速點餐</button></div>
             </div>
             </div>
-            </div>
+        </div>
 
             
     </body>
 
     <style>
+
+    div.circle{
+    position: absolute;
+    background-color:#DB0007;
+    bottom: 3vw;
+    right: 5vw;
+    width:3000vw;
+    height:3000vw;
+    z-index: 100;
+
+    border-radius:999em;
+    animation-name: circle;
+    animation-fill-mode:forwards;
+    animation-delay: 0s;
+    animation-duration:0.5s;
+    }
+    @keyframes circle
+    {
+        from 
+        {        
+            width:3000vw;
+            height:3000vw;
+        }
+        to 
+        {
+            width:1vw;
+            height:1vw;
+        }
+    }
+
+    div.bgcover{
+    position: absolute;
+    background-color:rgb(66, 66, 66);
+    top: 0vw;
+    left: 0vw;
+    width:100vw;
+    height:100vw;
+    z-index: 99;
+
+    animation-name: bgcover;
+    animation-fill-mode:forwards;
+    animation-delay: 0.5s;
+    animation-duration:0.1s;
+    }
+    @keyframes bgcover
+    {
+        from 
+        {        
+            visibility: visible;
+        }
+        to 
+        {
+            visibility: hidden;
+        }
+    }
+
     div.top_grey {
     position: absolute;
     background-color: rgb(66, 66, 66);

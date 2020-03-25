@@ -4,17 +4,199 @@
         <meta charset='utf-8'> 
     </head>
     <body bgcolor="#DB0007" style="overflow-x:hidden;">
-        <div>
+        <div class="divvv">
         </div>
-        <img src="./PNG/burger1_S.png" style="position: absolute;left: 35vw; top: 5vw; width: 35vw; "></img>
-        <img src="./PNG/24HDelivery_button.png" style="position: absolute;left: 34vw; top: 18vw; width: 35vw; transform:rotate(-5deg);"></img>
-        <img src="./PNG/burger2_S.png" style="position: absolute;left: 32vw; top: 25vw; width: 38vw; "></img>
-        <!--<a href="./Untitled-2.html"><img src="./PNG/MENU_button.png" style="position: absolute;left: 38.5vw; top: 34vw; width: 23vw; transform:rotate(5deg);"></img></a>-->
-        <img src="./PNG/MENU_button.png" onclick="location.href='./index2.html';" style="position: absolute;left: 38.5vw; top: 34vw; width: 23vw; transform:rotate(5deg);"></img>
-        <img src="./PNG/burger3_S.png" style="position: absolute;left: 35vw; top: 41vw; width: 31vw; "></img>
-        <img src="./PNG/M_L.png" style="position: absolute;left: -0.5vw; top: 6vw; width: 18vw; "></img>
-        <img src="./PNG/M_R.png" style="position: absolute;right: -0.7vw; top: 7.5vw; width: 23vw; "></img>
-    
+        <img class="burger1" src="./PNG/burger1_S.png"></img>
+        <img class="burger2" src="./PNG/burger2_S.png"></img>
+        <img class="burger3" src="./PNG/burger3_S.png"></img>
+
+        <img class="menu" src="./PNG/MENU_button.png" onclick="location.href='./index2.html';"></img>
+        <img class="ddd" src="./PNG/24HDelivery_button.png"></img>
+       
+        <img class="bigml" src="./PNG/M_L.png"></img>
+        <img class="bigmr" src="./PNG/M_R.png"></img>
+        
+
     </body>
 
+    <style>
+        .burger1 {
+        position: absolute;
+        left: 35vw;
+        top: 2vw;
+        width: 35vw;
+
+        animation-name: burger1;
+        animation-fill-mode:forwards;
+        animation-delay: 1.5s;
+        animation-duration:1.2s;
+        }
+        @keyframes burger1
+        {
+            from 
+            {
+                margin-top: 0vw;         
+            }
+            to 
+            {
+                margin-top: 22vw;
+            }
+        }
+
+        .burger2 {
+        position: absolute;
+        left: 32vw; 
+        top: 22vw; 
+        width: 38vw;
+        animation-name: burger2;
+        animation-fill-mode:forwards;
+        animation-delay: 1.5s;
+        animation-duration:1.2s;
+        }
+        @keyframes burger2
+        {
+            from 
+            {
+                margin-left: 0vw;
+                margin-top: 0vw;
+                transform: rotate(6deg);
+            }
+            to 
+            {
+                margin-left: 2.5vw;
+                margin-top: 10vw;
+                transform: rotate(6deg);
+            }
+        }
+
+        .burger3 {
+        position: absolute;
+        left: 35vw;
+        top: 38vw; 
+        width: 31vw;
+
+        animation-name: burger3;
+        animation-fill-mode:forwards;
+        animation-delay: 1.5s;
+        animation-duration:1.2s;
+        }
+        @keyframes burger3
+        {
+            from 
+            {        
+                transform: rotate(-5deg);
+            }
+            to 
+            {
+                transform: rotate(-5deg);
+            }
+        }
+
+        .ddd {
+        position: absolute;
+        left: 34vw; 
+        top: 15vw; 
+        width: 35vw; 
+        transform:rotate(-5deg);
+
+        animation-name: ddd;
+        animation-fill-mode:forwards;
+        animation-delay: 1.5s;
+        animation-duration:1s;
+        }
+        @keyframes ddd
+        {
+            from 
+            {        
+                visibility:hidden;
+            }
+            to 
+            {
+                visibility:hidden;
+            }
+        }
+
+        .menu {
+        position: absolute;
+        left: 38.5vw; 
+        top: 31vw; 
+        width: 23vw; 
+        transform:rotate(5deg);
+        animation-name: menu;
+        animation-fill-mode:forwards;
+        animation-delay: 1.5s;
+        animation-duration:1.2s;
+        }
+        @keyframes menu
+        {
+            from 
+            {        
+                transform: rotate(5deg);
+                margin-top: 0vw;
+            }
+            to 
+            {
+                transform: rotate(-1deg);
+                margin-top: -20vw;
+            }
+        }
+
+        .bigml {
+        position: absolute;
+        left: -0.5vw;
+        top: 3vw;
+        width: 18vw;
+        animation-name: bigml;
+        animation-fill-mode:forwards;
+        animation-delay: 1.5s;
+        animation-duration:1.2s;
+        }
+        @keyframes bigml
+        {
+            from 
+            {        
+                position: absolute;
+                left: -0.5vw;
+                top: 3vw;
+                width: 18vw;
+            }
+            to 
+            {
+                position: absolute;
+                left: -30vw;
+                top: 3vw;
+                width: 18vw;
+            }
+        }
+
+        .bigmr {
+        position: absolute;
+        right: -0.7vw; 
+        top: 4.5vw; 
+        width: 23vw;
+
+        animation-name: bigmr;
+        animation-fill-mode:forwards;
+        animation-delay: 1.5s;
+        animation-duration:1.2s;
+        }
+        @keyframes bigmr
+        {
+            from 
+            {        
+                position: absolute;
+                right: -0.7vw; 
+                top: 4.5vw; 
+                width: 23vw;
+            }
+            to 
+            {
+                position: absolute;
+                right: -30vw; 
+                top: 4.5vw; 
+                width: 23vw;
+            }
+        }
+
+    </style>
 </html>
